@@ -1,0 +1,249 @@
+@font-face {
+    font-family: "Inter";
+    src: url(./design/social-links-profile-main/assets/fonts/static/Inter-Bold.ttf) format('truetype'),
+    url(./design/social-links-profile-main/assets/fonts/static/Inter-Regular.ttf) format('truetype'),
+    url(./design/social-links-profile-main/assets/fonts/static/Inter-SemiBold.ttf) format('truetype');
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter"
+}
+body{
+  font-size: 18px; 
+  margin: 0 auto;
+  
+}
+
+.navbar{
+  width: 100vw;
+  display: flex;
+  background-color: hsl(0, 0%, 8%);;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  margin-bottom: 20px;
+  
+  
+}
+ul{
+  display: flex;
+  list-style: none;
+  color: #F8FAFC;
+  gap: 60px;
+}
+li{
+  display: flex;
+  align-items: center;
+  
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: azure;
+  text-decoration: underline;
+}
+a:active{
+  color: cornsilk;
+  text-decoration: underline;
+}
+
+footer{
+  height: 370px;
+  background-color: hsl(0, 0%, 8%);;
+  display: block;
+  justify-content: space-evenly;
+  color: #F8FAFC;
+  margin-top: 20px;
+}
+.footer-main{
+  display: block;
+  text-align: center;
+  padding-top: 40px;
+}
+.footer-content{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.btn{
+  width: 180px;
+  height: 40px;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-size: 1rem;
+
+}
+.btn:hover {
+  background-color: #1d4ed8;
+}
+.footer-cpy p{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+}
+.footer-spanel{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: #F8FAFC 0.01px solid;
+  margin: 35px 90px; 
+}
+.footer-spanel ul li{
+  margin-top: 15px;
+  font-size: 13px;
+}
+.footer-logo{
+  margin-top: 10px;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  gap: 20px;  
+   
+}
+.footer-logo img{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  filter: invert(1);
+  transition: transform 0.2s;
+}
+.footer-logo img:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.hero{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  color: rgb(212, 99, 99);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  z-index: 1;
+  
+  
+}
+.hero p{
+  z-index: 1;
+  font-size: 2rem;
+  margin: 10px 0;
+}
+.hero span{
+  font-weight: bold;
+  color: #58a6ff;
+
+}
+.btn-res{
+  margin-top: 10px;
+  z-index: 1;
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-size: .95rem;
+}
+.btn-res img{
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.hero-video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.btn-res:hover {
+  background-color: #1d4ed8;
+}
+.profile-container{
+  width: 380px;
+  height: 480px;
+  margin: auto;
+  perspective: 1200px;
+}
+.profile-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s ease;
+}
+.profile-container:hover .profile-inner{
+  transform: rotateY(180deg);
+}
+.profile-card{
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  background-color: hsl(0, 0%, 12%);;
+  padding: 38px;
+  border-radius: 12px;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+.user-img{
+  height: 190px;
+  width: 190px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+  margin-bottom: 20px;
+  
+}
+.user-name{
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  padding-bottom: 10px;
+  font-size: 24px;
+}
+.user-address{
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  padding-bottom: 20px;
+  font-size: 16px;
+}
+.user-des{
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  padding-bottom: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  
+}
+h2{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 24px;
+  font-weight: 300px;
+  padding-bottom: 25px;
+  padding-top: 50px;
+  color: hsl(0, 0%, 100%) ;
+}
+
+
+.back{
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
